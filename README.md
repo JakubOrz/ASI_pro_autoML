@@ -12,6 +12,9 @@ Dla tych co uzywają PyCharma<br>
 Dla tych co używają VS Code
 - Zainstalujcie PyCharma
 
+Instalowanie własnej paczki przykładowa treedrawer<br>
+``pip install -e <scieżka do folderu gdzie jest setup.py>``
+
 Odapalanie venva (dla opornych)<br>
 ``python -m venv env``
 
