@@ -1,5 +1,9 @@
+from colorama import Fore
+from colorama import Style
+
+
 def draw_heart():
-    print(" :3 ")
+    print(f"{Fore.MAGENTA} :3 {Style.RESET_ALL}")
 
 
 def emoticon_heart():

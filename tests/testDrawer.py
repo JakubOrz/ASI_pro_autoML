@@ -1,5 +1,6 @@
-from package1 .drawHeart.hearts import emoticon_heart
-from package1 .drawHeart.hearts import more_hearts
+from hearts import more_hearts, emoticon_heart, draw_heart
 
-emoticon_heart()
-more_hearts(10)
+if __name__ == '__main__':
+    more_hearts(10)
+    emoticon_heart()
+    draw_heart()
