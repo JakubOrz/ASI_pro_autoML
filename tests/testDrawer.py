@@ -1,3 +1,3 @@
-from package1 import drawBetterTree
+from package1 .drawHeart.hearts import emoticon_heart
 
-drawBetterTree(7)
+emoticon_heart()
