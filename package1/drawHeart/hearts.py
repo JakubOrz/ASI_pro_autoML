@@ -3,5 +3,8 @@ def draw_heart():
 
 
 def emoticon_heart():
-    print(" \U0001F49C")
+    print("\U0001F49C")
 
+
+def more_hearts(count: int = 3):
+    print("\U0001F49E" * count)
