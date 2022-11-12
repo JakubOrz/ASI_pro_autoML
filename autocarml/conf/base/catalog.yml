@@ -1,0 +1,25 @@
+
+small_raw_car_data_path:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/car_prices_small.csv
+  load_args:
+    sep: ','
+    quotechar: '"'
+    encoding: 'utf-8'
+    on_bad_lines: 'skip'
+    parse_dates: true
+large_raw_car_data_path:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/car_prices.csv
+  load_args:
+    sep: ','
+    quotechar: '"'
+    encoding: 'utf-8'
+    on_bad_lines: 'skip'
+    parse_dates: true
+car_data_chunk:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermadiate/data_chunk.csv
+yearly_sales:
+  type: json.JSONDataSet
+  filepath: data/02_intermadiate/year_sales.json

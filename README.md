@@ -8,6 +8,22 @@
 #### Programista #1 <wpisz się!>
 #### Programista #2 <wpisz się!>
 
+##Change log
+
+###12.11.2022
+Zaimplementowałem projekt Kedro, aby odpalić kedro należy wejsć do katalogu
+autocarml.<br>
+W tej chwili mamy jeden pipeline, o nazwie również autocarml tam póki co to co się wykonuje to
+odczytanie head pliku csv, i pozbycie się wadliwych wierzszy. 
+Na chwilę 12.11 20:21 jeszcze nie podłączyłem dvc remote, zrobię to w następnym
+patchu<br>
+Aby odpalić kedro należy być w katalogu autocarml <br>
+Pamiętajcie o ponownym użyciu<br>
+`pip install -r requirements.txt` <br>
+Doszły nowe biblioteki (kedro)
+
+`kedro run`
+
 Dla tych co uzywają PyCharma<br>
 - Project, openfrom VCS
 - Wybrać to repozytorium
