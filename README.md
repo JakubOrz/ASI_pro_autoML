@@ -47,7 +47,7 @@ Instalowanie lokalnych paczek (mamy dwie)<br>
 
 Uwaga, dla tych co używają windowsa potrzebna 
 jest dodatkowa paczka<br>
-``pip instal -r win_extra_requirements.txt``
+``pip install -r win_extra_requirements.txt``
 
 Zanim zaczniecie edytować kod pamiętajcie o<br>
 ``git pull``<br>W PyCharmie ta niebieska strzałeczka,
