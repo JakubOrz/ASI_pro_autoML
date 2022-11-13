@@ -4,7 +4,7 @@
 ### Lista kontrybutorów
 #### Szefowa zespołu: Janina Jegorowa
 #### Architekt systemowy: Jakub Orzyłowski
-#### Data scientist: <wpisz się!>
+#### Data scientist: Jakub Windak, 
 #### Programista #1 <wpisz się!>
 #### Programista #2 <wpisz się!>
 
