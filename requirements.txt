@@ -23,7 +23,6 @@ configobj==5.0.6
 contourpy==1.0.6
 cryptography==38.0.1
 cycler==0.11.0
--e git+https://github.com/JakubOrz/ASI_pro_autoML.git@6bec6c7820adb8e8ad9f70b7f0ea8b944e267005#egg=datapackage&subdirectory=data_package1
 dictdiffer==0.9.0
 diskcache==5.4.0
 distro==1.8.0
@@ -47,7 +46,6 @@ future==0.18.2
 gitdb==4.0.9
 GitPython==3.1.29
 grandalf==0.6
--e git+https://github.com/JakubOrz/ASI_pro_autoML.git@6bec6c7820adb8e8ad9f70b7f0ea8b944e267005#egg=hearts&subdirectory=hearts_package
 hydra-core==1.2.0
 idna==3.4
 importlib-resources==5.10.0
