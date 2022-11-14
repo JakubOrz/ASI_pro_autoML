@@ -1,0 +1,4 @@
+['remote "server"']
+    url = ssh://automl@68.219.92.221:/home/automl/data1
+    user = automl
+    keyfile = ../dvcServer_key.pem

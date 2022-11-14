@@ -9,9 +9,28 @@
 #### Programista #1 <wpisz się!>
 #### Programista #2 <wpisz się!>
 
-##Change log
+## Change log
 
-###12.11.2022
+### 13.11.2022
+
+Usunąłem te pakiety które teraz zostały włączone jako kedro, celem oczyszcznia 
+kodu.
+Należy zaktualizować pakiety
+
+`pip install -r requirements.txt` 
+
+Usunąłem puste katalogi które były automatycznie generowane przez kedro.
+
+Skonfigurowałem dvc remote na serverze ssh. Można już śmiało używać 
+
+`dvc push -r server -v`
+
+`dvc pull -r server -v`
+
+Komenda -v sprawia że wyświetli się więcej informacji 
+
+Jakub O.
+### 12.11.2022
 Zaimplementowałem projekt Kedro, aby odpalić kedro należy wejsć do katalogu
 autocarml.<br>
 W tej chwili mamy jeden pipeline, o nazwie również autocarml tam póki co to co się wykonuje to
@@ -51,5 +70,5 @@ jest dodatkowa paczka<br>
 
 Zanim zaczniecie edytować kod pamiętajcie o<br>
 ``git pull``<br>W PyCharmie ta niebieska strzałeczka,
-bie chcę mi się potem naprawiać za was rozjechanych branchów <br>
+nie chce mi się potem naprawiać za was rozjechanych branchów <br>
 
