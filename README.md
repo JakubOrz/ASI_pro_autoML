@@ -11,6 +11,22 @@
 
 ## Change log
 
+
+### 14.11.2022
+
+Dodałem notebooka, żeby spełnić wymagania. Nie byłem pewny, co w nim powinno siedzieć, więc po prostu pobiera dane i trenuje model.
+Dodałem podzieloną na sensowne node'y funkcjonalność modelu w miejsce poprzedniego, testowego pipeline'a.
+
+Reszty nie tykałem, co złego to nie ja.
+
+
+
+Pozdrawiam,
+Paweł Sołtys
+
+PS
+Używam VSCode'a, bo nie będziesz mi mówił, jak mam żyć
+
 ### 13.11.2022
 
 Usunąłem te pakiety które teraz zostały włączone jako kedro, celem oczyszcznia 
