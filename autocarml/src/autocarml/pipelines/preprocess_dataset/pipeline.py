@@ -45,7 +45,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             ),
         node(
             func=predict_and_score,
-            inputs=["model","xtest"],
+            inputs=["model", "xtest"],
             outputs=None,
             name="Predict_and_score"
         )

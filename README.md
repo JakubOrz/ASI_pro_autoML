@@ -11,6 +11,11 @@
 
 ## Change log
 
+### 02.12.2022
+
+Dodałem notatki z careta i optuny dla data Scientists
+
+Jakub Orzyłowski
 
 ### 14.11.2022
 
