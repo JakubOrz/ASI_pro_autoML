@@ -11,6 +11,22 @@
 
 ## Change log
 
+### 4.12.2020
+
+Implementacja trenowania i wybierania najlepszego modelu za pomocą
+pycaret oraz optuna, zawarte w pipeline
+
+- optuna_model_training
+- pycret_pipeline
+
+``kedro run -p pyceret_pipeline``
+
+``kedro run -p optuna_model_training``
+
+Pamiętajcie o zaktualizowaniu wymagań
+
+Jakub Orzyłowski, Błażej Bartkiewicz
+
 ### 04.12.2022
 Dodałem pierwszą wersję notebooka z pycarretem.
 

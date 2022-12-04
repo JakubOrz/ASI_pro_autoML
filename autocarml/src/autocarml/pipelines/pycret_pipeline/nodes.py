@@ -3,11 +3,9 @@ This is a boilerplate pipeline 'pycret_pipeline'
 generated using Kedro 0.18.3
 """
 from typing import Tuple, Any
-
 import pandas
 from pycaret.regression import setup
-from pycaret.classification import setup as classification_setup
-from pycaret.classification import compare_models, evaluate_model
+from pycaret.regression import compare_models, evaluate_model
 
 
 def preprocess_dates(data_frame: pandas.DataFrame) -> pandas.DataFrame:
@@ -33,6 +31,7 @@ def create_model_setup(data_frame: pandas.DataFrame, target: str) -> Tuple[Any, 
 def generate_model(data_frame: pandas.DataFrame, target: str) -> Any:
     setup(data=data_frame, target=target)
     best = compare_models(sort="TT")
+    print(best)
     return best
 
 

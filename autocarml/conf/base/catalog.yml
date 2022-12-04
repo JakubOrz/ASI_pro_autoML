@@ -29,3 +29,6 @@ cleared_dates:
 trained_model:
   type: pickle.PickleDataSet
   filepath: data/03_models/kedro_best_model.pkl
+trained_optunised_model:
+  type: pickle.PickleDataSet
+  filepath: data/03_models/optuna_best_lr_model.pkl
