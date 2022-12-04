@@ -11,6 +11,13 @@
 
 ## Change log
 
+### 04.12.2022
+Dodałem pierwszą wersję notebooka z pycarretem.
+Działa utworzenie data frame z naszymi danymi, ustawienie modelu, porównanie modeli i wybranie najlepszego.
+Ewaluacje oraz zapisanie modelu dodam w ciągu dnia.
+
+Błażej Bartkiewicz
+
 ### 02.12.2022
 
 Dodałem notatki z careta i optuny dla data Scientists
