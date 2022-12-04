@@ -1,0 +1,4 @@
+outs:
+- md5: 2a2fc0634b3e6ca1f779028cc9e07240
+  size: 767
+  path: optuna_best_lr_model.pkl

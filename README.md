@@ -11,7 +11,19 @@
 
 ## Change log
 
-### 4.12.2020
+### 4.12.2022 hotfix
+
+Na dvc remote wrzuciłem wytrenowane modele, aby było wam łatwiej
+potraktować je wandb
+
+Aby pobrać te modele (bez odpalania kedro)
+
+``dvc pull -r server``
+
+Jakub Orzyłowski
+
+
+### 4.12.2022
 
 Implementacja trenowania i wybierania najlepszego modelu za pomocą
 pycaret oraz optuna, zawarte w pipeline
