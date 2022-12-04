@@ -13,7 +13,9 @@
 
 ### 04.12.2022
 Dodałem pierwszą wersję notebooka z pycarretem.
+
 Działa utworzenie data frame z naszymi danymi, ustawienie modelu, porównanie modeli i wybranie najlepszego.
+
 Ewaluacje oraz zapisanie modelu dodam w ciągu dnia.
 
 Błażej Bartkiewicz
