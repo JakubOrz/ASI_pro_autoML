@@ -34,7 +34,7 @@ def create_pipeline(**kwargs) -> Pipeline:
         node(
             func=split_data_set,
             inputs=["small_raw_car_data_path"],
-            outputs=["xtrain","xtest","ytrain","ytest"],
+            outputs=["xtrain", "xtest", "ytrain", "ytest"],
             name="Split_data_set"
         ),
         node(

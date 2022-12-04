@@ -1,1 +1,4 @@
 chunk_size: 6
+key1: "Klucz 1"
+key2: "Inny klucz"
+train_target: "sellingprice"

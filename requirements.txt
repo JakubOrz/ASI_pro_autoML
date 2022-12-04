@@ -72,7 +72,7 @@ matplotlib==3.6.2
 multidict==6.0.2
 nanotime==0.5.2
 networkx==2.8.7
-numpy==1.23.4
+numpy~=1.20.3
 omegaconf==2.2.3
 packaging==21.3
 pandas==1.5.1
@@ -120,3 +120,8 @@ wcwidth==0.2.5
 yarl==1.8.1
 zc.lockfile==2.0
 zipp==3.10.0
+
+setuptools~=61.2.0
+pycaret~=2.3.10
+sklearn~=0.0.post1
+scikit-learn~=0.23.2

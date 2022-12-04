@@ -2,3 +2,4 @@
 /local_data/
 /autocarml/logs/
 .idea/
+/autocarml/data/03_models/kedro_best_model.pkl

@@ -23,3 +23,9 @@ car_data_chunk:
 yearly_sales:
   type: json.JSONDataSet
   filepath: data/02_intermadiate/year_sales.json
+cleared_dates:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermadiate/data_cleared_1.csv
+trained_model:
+  type: pickle.PickleDataSet
+  filepath: data/03_models/kedro_best_model.pkl
