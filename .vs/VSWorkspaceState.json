@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.dvc",
+    "\\autocarml",
+    "\\autocarml\\src",
+    "\\autocarml\\src\\autocarml"
+  ],
+  "SelectedNode": "\\autocarml\\src\\autocarml\\__init__.py",
+  "PreviewInSolutionExplorer": false
+}

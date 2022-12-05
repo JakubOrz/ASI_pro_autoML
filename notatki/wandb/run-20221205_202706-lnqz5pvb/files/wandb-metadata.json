@@ -1,0 +1,49 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.9.5",
+    "heartbeatAt": "2022-12-05T19:27:07.344711",
+    "startedAt": "2022-12-05T19:27:06.654371",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/JakubOrz/ASI_pro_autoML.git",
+        "commit": "8616234624c449a6a36ef08c053d9126962edf9d"
+    },
+    "email": "s20935@pjwstk.edu.pl",
+    "root": "C:/Users/Sopyl/Desktop/ASI/ASI_pro_autoML",
+    "host": "DESKTOP-M2O717Q",
+    "username": "Sopyl",
+    "executable": "c:\\Users\\Sopyl\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3593.0,
+        "min": 0.0,
+        "max": 3593.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3593.0,
+            "min": 0.0,
+            "max": 3593.0
+        }
+    ],
+    "disk": {
+        "total": 930.9022598266602,
+        "used": 860.0243492126465
+    },
+    "gpu": "NVIDIA GeForce GTX 1060 6GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1060 6GB",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.94964599609375
+    }
+}

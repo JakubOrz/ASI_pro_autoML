@@ -1,0 +1,37 @@
+2022-12-05 20:27:06,657 INFO    MainThread:19892 [wandb_setup.py:_flush():68] Configure stats pid to 19892
+2022-12-05 20:27:06,657 INFO    MainThread:19892 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Sopyl\.config\wandb\settings
+2022-12-05 20:27:06,657 INFO    MainThread:19892 [wandb_setup.py:_flush():68] Loading settings from c:\Users\Sopyl\Desktop\ASI\ASI_pro_autoML\notatki\wandb\settings
+2022-12-05 20:27:06,657 INFO    MainThread:19892 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-12-05 20:27:06,658 INFO    MainThread:19892 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-12-05 20:27:06,658 INFO    MainThread:19892 [wandb_init.py:_log_setup():476] Logging user logs to c:\Users\Sopyl\Desktop\ASI\ASI_pro_autoML\notatki\wandb\run-20221205_202706-lnqz5pvb\logs\debug.log
+2022-12-05 20:27:06,658 INFO    MainThread:19892 [wandb_init.py:_log_setup():477] Logging internal logs to c:\Users\Sopyl\Desktop\ASI\ASI_pro_autoML\notatki\wandb\run-20221205_202706-lnqz5pvb\logs\debug-internal.log
+2022-12-05 20:27:06,658 INFO    MainThread:19892 [wandb_init.py:_jupyter_setup():426] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x00000162D24CFEE0>
+2022-12-05 20:27:06,658 INFO    MainThread:19892 [wandb_init.py:init():516] calling init triggers
+2022-12-05 20:27:06,659 INFO    MainThread:19892 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'epochs': 5, 'classes': 10, 'kernels': [16, 32], 'batch_size': 128, 'learning_rate': 0.005, 'dataset': 'MNIST', 'architecture': 'CNN'}
+2022-12-05 20:27:06,659 INFO    MainThread:19892 [wandb_init.py:init():569] starting backend
+2022-12-05 20:27:06,659 INFO    MainThread:19892 [wandb_init.py:init():573] setting up manager
+2022-12-05 20:27:06,661 INFO    MainThread:19892 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn, using: spawn
+2022-12-05 20:27:06,662 INFO    MainThread:19892 [wandb_init.py:init():580] backend started and connected
+2022-12-05 20:27:06,673 INFO    MainThread:19892 [wandb_run.py:_label_probe_notebook():1113] probe notebook
+2022-12-05 20:27:06,674 INFO    MainThread:19892 [wandb_run.py:_label_probe_notebook():1123] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-12-05 20:27:06,674 INFO    MainThread:19892 [wandb_init.py:init():658] updated telemetry
+2022-12-05 20:27:06,716 INFO    MainThread:19892 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-12-05 20:27:07,136 INFO    MainThread:19892 [wandb_run.py:_on_init():2000] communicating current version
+2022-12-05 20:27:07,286 INFO    MainThread:19892 [wandb_run.py:_on_init():2004] got version response 
+2022-12-05 20:27:07,286 INFO    MainThread:19892 [wandb_init.py:init():728] starting run threads in backend
+2022-12-05 20:27:07,493 INFO    MainThread:19892 [wandb_run.py:_console_start():1980] atexit reg
+2022-12-05 20:27:07,493 INFO    MainThread:19892 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.WRAP_RAW
+2022-12-05 20:27:07,493 INFO    MainThread:19892 [wandb_run.py:_redirect():1903] Wrapping output streams.
+2022-12-05 20:27:07,493 INFO    MainThread:19892 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-12-05 20:27:07,494 INFO    MainThread:19892 [wandb_init.py:init():765] run started, returning control to user process
+2022-12-05 20:27:07,500 INFO    MainThread:19892 [wandb_run.py:_finish():1746] finishing run asi_pro_automl/pytorch-demo/lnqz5pvb
+2022-12-05 20:27:07,500 INFO    MainThread:19892 [jupyter.py:save_history():448] not saving jupyter history
+2022-12-05 20:27:07,501 INFO    MainThread:19892 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-05 20:27:07,501 INFO    MainThread:19892 [wandb_init.py:_jupyter_teardown():408] cleaning up jupyter logic
+2022-12-05 20:27:07,501 INFO    MainThread:19892 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 1
+2022-12-05 20:27:07,501 INFO    MainThread:19892 [wandb_run.py:_restore():1932] restore
+2022-12-05 20:27:07,501 INFO    MainThread:19892 [wandb_run.py:_restore():1938] restore done
+2022-12-05 20:27:12,459 INFO    MainThread:19892 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-12-05 20:27:12,459 INFO    MainThread:19892 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-12-05 20:27:12,461 INFO    MainThread:19892 [wandb_run.py:_footer_sync_info():3333] logging synced files
