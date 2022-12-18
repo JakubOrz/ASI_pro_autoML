@@ -4,12 +4,18 @@
 ### Lista kontrybutorów
 #### Szefowa zespołu: Janina Jegorowa
 #### Architekt systemowy: Jakub Orzyłowski
-#### Data scientist: Jakub Windak, Błażej Bartkiewicz, Paweł Sołtys
+#### Data scientist: Błażej Bartkiewicz, Paweł Sołtys
 #### Inżynier ML: Błażej Bartkiewicz
 #### Programista #1 Paweł Sołtys
-#### Programista #2 <wpisz się!>
+
 
 ## Change log
+
+### 18.12.2022 Czyszczenie repozyorium z plików i ludzi które powinny być w .gitignore
+
+Który fan VS Code zapomniał o dodaniu folderu .vs do .gitignore?
+
+Jakub Orzyłowski
 
 ### 4.12.2022 hotfix
 
