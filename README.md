@@ -11,6 +11,12 @@
 
 ## Change log
 
+### 05.01.2023 Dockerfile
+
+Dodałem dockerfile za pomocą kedro docker
+
+Jakub Orzyłowski
+
 ### 18.12.2022 Czyszczenie repozyorium z plików i ludzi które powinny być w .gitignore
 
 Który fan VS Code zapomniał o dodaniu folderu .vs do .gitignore?
