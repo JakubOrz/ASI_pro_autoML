@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  autocarml:
+    build: ./autocarml
+    ports:
+      - 8888:8888
+volumes:
+  autocarml:
