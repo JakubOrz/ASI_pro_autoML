@@ -13,7 +13,6 @@ conf/local
 !conf/local/.gitkeep
 
 # ignore everything in the following folders
-data
 logs
 notebooks
 references
