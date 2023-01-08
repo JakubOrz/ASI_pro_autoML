@@ -4,12 +4,18 @@
 ### Lista kontrybutorów
 #### Szefowa zespołu: Janina Jegorowa
 #### Architekt systemowy: Jakub Orzyłowski
-#### Data scientist: Błażej Bartkiewicz, Paweł Sołtys
+#### Data scientist: Błażej Bartkiewicz, Paweł Sołtys, Jakub Windak
 #### Inżynier ML: Błażej Bartkiewicz
 #### Programista #1 Paweł Sołtys
 
 
 ## Change log
+
+### 07.01.2023 docker-compose
+
+Dodałem docker-compose
+
+Jakub Windak
 
 ### 05.01.2023 Dockerfile
 
