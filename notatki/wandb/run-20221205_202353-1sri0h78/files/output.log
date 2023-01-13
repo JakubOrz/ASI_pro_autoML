@@ -1,2 +1,0 @@
-C:\Users\Sopyl\AppData\Local\Temp\ipykernel_19892\1933369030.py:10: FutureWarning: The error_bad_lines argument has been deprecated and will be removed in a future version. Use on_bad_lines in the future.
-  sub_dataset = pd.read_csv("..\\autocarml\\data\\02_intermidiate\\data_chunk.csv", error_bad_lines=False)

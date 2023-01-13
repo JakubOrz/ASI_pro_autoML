@@ -17,6 +17,16 @@ Dodałem docker-compose
 
 Jakub Windak
 
+### 09.01.2023 Czyszczenie zbędnych bibliotek
+
+Po tym jak obraz Dockera nagle zaczął wynosić ponad 4GB decydowałem się na totalne 
+wyczyszczenie bibliotek, celem optymalizacji budowy Dockera
+
+Usunąłem / zakomentowałem pliki związane z wandb, optuna, jupter
+Z racji tego, ze nie sa używane w ostatecznym pipeline.
+
+Nasz pipeline będzie używał pycareta do trenowania modelu, polecam reset virtual enva.
+
 ### 05.01.2023 Dockerfile
 
 Dodałem dockerfile za pomocą kedro docker

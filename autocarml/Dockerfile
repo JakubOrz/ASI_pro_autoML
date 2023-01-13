@@ -3,8 +3,7 @@ FROM $BASE_IMAGE as runtime-environment
 
 # install project requirements
 COPY src/requirements.txt /tmp/requirements.txt
-RUN pip install kedro[pandas]
-RUN pip intall pycaret
+RUN pip install --no-cache -r /tmp/requirements.txt && rm -f /tmp/requirements.txt
 
 # add kedro user
 ARG KEDRO_UID=999
