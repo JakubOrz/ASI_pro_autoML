@@ -4,7 +4,7 @@
 ### Lista kontrybutorów
 #### Szefowa zespołu: Janina Jegorowa
 #### Architekt systemowy: Jakub Orzyłowski
-#### Data scientist: Błażej Bartkiewicz, Paweł Sołtys, Jakub Windak
+#### Data scientist: Błażej Bartkiewicz, Jakub Windak
 #### Inżynier ML: Błażej Bartkiewicz
 #### Programista #1 Paweł Sołtys
 
