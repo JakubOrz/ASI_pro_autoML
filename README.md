@@ -11,6 +11,12 @@
 
 ## Change log
 
+### 15.01.2023 docker-compose
+
+Compose update
+
+Jakub Windak
+
 ### 07.01.2023 docker-compose
 
 Dodałem docker-compose
