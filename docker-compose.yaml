@@ -4,5 +4,13 @@ services:
     build: ./autocarml
     ports:
       - 8888:8888
+    volumes:
+      - data_volume:/data/automl
+  autocar_api:
+    build: ./autocar_API
+    ports:
+      - 80:80
+    volumes:
+      - data_volume:/data/api
 volumes:
-  autocarml:
+  data_volume:
