@@ -11,6 +11,19 @@
 
 ## Change log
 
+### 16.01.2023 docker-compose and autocarml Dockerfile fixes
+
+Inside docker-compose for 'autocarml' service:
+- Provided path to the Dockerfile,
+- Set the working directory, command and env variable
+- Mount the volume at the correct location
+
+For autocarml Dockerfile:
+- Fixed the path to requirements.txt
+- Updated the base image to be able to build locally on Apple M1
+
+Janina Jegorowa
+
 ### 15.01.2023 docker-compose
 
 Compose update
