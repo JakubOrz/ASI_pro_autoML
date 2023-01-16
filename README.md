@@ -11,6 +11,14 @@
 
 ## Change log
 
+### 16.01.2023 nowy Ai model
+ - Dodałem lepiej działający model ai (pycaret_model_2.pkl)
+ - Wrzuciłem do na DVC
+ - Do notatek podałem notebooka z całym procesem
+
+Błażej Bartkiewicz
+
+
 ### 16.01.2023 docker-compose and autocarml Dockerfile fixes
 
 Inside docker-compose for 'autocarml' service:

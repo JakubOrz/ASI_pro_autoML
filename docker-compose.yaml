@@ -17,10 +17,16 @@ services:
     working_dir: /home/kedro_docker
     command: ["kedro", "run"]
   autocar_api:
-    build: ./autocar_API
+    build:
+      context: .
+      dockerfile: ./autocar_API/Dockerfile
+      args:
+        - BASE_IMAGE=python:3.9-slim
     ports:
       - 80:80
     volumes:
-      - data_volume:/data/api
+      - data_volume:/code
+    working_dir: /code
+    command: ["uvicorn", "app.fastApi:app", "--host", "0.0.0.0", "--port", "80"]
 volumes:
   data_volume:
