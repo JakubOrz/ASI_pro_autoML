@@ -1,11 +1,21 @@
 version: "3.8"
 services:
   autocarml:
-    build: ./autocarml
+    build:
+      context: .
+      dockerfile: ./autocarml/Dockerfile
+      args:
+        - BASE_IMAGE=amd64/python:3.9-buster
+        - KEDRO_UID=999
+        - KEDRO_GID=0
     ports:
       - 8888:8888
+    environment:
+      - PYTHONPATH=/home/kedro_docker
     volumes:
-      - data_volume:/data/automl
+      - data_volume:/home/kedro_docker
+    working_dir: /home/kedro_docker
+    command: ["kedro", "run"]
   autocar_api:
     build: ./autocar_API
     ports:
