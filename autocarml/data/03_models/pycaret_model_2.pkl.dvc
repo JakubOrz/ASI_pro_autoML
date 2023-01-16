@@ -1,4 +1,0 @@
-outs:
-- md5: 6873f8b3d69499e5c197ef0023578a78
-  size: 8345295
-  path: pycaret_model_2.pkl

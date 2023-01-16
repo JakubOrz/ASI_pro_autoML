@@ -32,3 +32,6 @@ trained_model:
 trained_optunised_model:
   type: pickle.PickleDataSet
   filepath: data/03_models/optuna_best_lr_model.pkl
+trained_model_2:
+   type: pickle.PickleDataSet
+   filepath: data/03_models/pycaret_best_model_2.pkl
