@@ -13,6 +13,7 @@
 
 ### 17.01.2023 Nowy pipeline
  - Dodałem nowy pipeline(pycaret_2) generujący i trenujący lepszy model AI(pycaret_best_model_2.pkl)
+
 Błażej Bartkiewicz
 
 ### 16.01.2023 nowy Ai model
