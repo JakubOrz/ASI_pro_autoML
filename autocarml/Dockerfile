@@ -1,8 +1,9 @@
-ARG BASE_IMAGE=python:3.9-slim
+#Changed the base image to be compatible with Apple M1, old image: python:3.9-slim 
+ARG BASE_IMAGE=amd64/python:3.9-buster
 FROM $BASE_IMAGE as runtime-environment
 
 # install project requirements
-COPY src/requirements.txt /tmp/requirements.txt
+COPY autocarml/requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache -r /tmp/requirements.txt && rm -f /tmp/requirements.txt
 
 # add kedro user
