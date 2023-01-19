@@ -7,10 +7,8 @@ from typing import Tuple, Any
 import pandas
 from pycaret.regression import setup
 from pycaret.regression import create_model
-from pycaret.regression import compare_models, evaluate_model
 
 def preprocess_dates(data_frame: pandas.DataFrame) -> pandas.DataFrame:
-    data_frame['saledate'] = pandas.to_datetime(data_frame['saledate'], utc=True)
     data_frame.drop(columns=["vin", "state", "seller", "saledate"], inplace=True)
     data_frame = data_frame.drop(labels=range(100000, 558811), axis=0)
     return data_frame

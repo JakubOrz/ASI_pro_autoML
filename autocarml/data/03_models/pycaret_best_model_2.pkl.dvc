@@ -1,0 +1,4 @@
+outs:
+- md5: 905ee39f51d650fc941df9e63afde137
+  size: 8051645
+  path: pycaret_best_model_2.pkl
