@@ -11,6 +11,10 @@
 
 ## Change log
 
+### 19.01.2023 Poprawki w pipelinie pycaret_2
+ - Usunąłem zmianę formatu daty w preprocessingu 
+ - Dodałem wygenerowany model do DVC
+
 ### 17.01.2023 Nowy pipeline
  - Dodałem nowy pipeline(pycaret_2) generujący i trenujący lepszy model AI(pycaret_best_model_2.pkl)
 
