@@ -11,6 +11,13 @@
 
 ## Change log
 
+### 22.01.2023 Add ansible playbook
+  Playbook will run the following tasks:
+ - Build the images
+ - Run the `kedro run` command and register the output in `kedro_run_output` variable
+ - Show the output of kedro run
+ - Deploy using the `docker-compose up -d` command
+
 ### 19.01.2023 Poprawki w pipelinie pycaret_2
  - Usunąłem zmianę formatu daty w preprocessingu 
  - Dodałem wygenerowany model do DVC
