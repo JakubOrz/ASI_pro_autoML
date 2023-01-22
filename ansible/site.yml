@@ -1,0 +1,30 @@
+---
+- name: Deploy autocarml
+  hosts: webservers
+  become: true
+  tasks:
+    - name: Install git
+      ansible.builtin.package:
+        name: git
+        state: present
+    - name: Install pip
+      ansible.builtin.package:
+        name: py3-pip
+        state: present
+    - name: Install necessary python packages
+      ansible.builtin.pip:
+        name: -r requirements.txt
+        state: present
+    - name: Build images
+      ansible.builtin.command:
+        docker-compose build
+    - name: Run kedro
+      ansible.builtin.command:
+        docker-compose run autocarml kedro run
+      register: kedro_run_output
+    - name: Show kedro run output
+      ansible.builtin.debug:
+        var: kedro_run_output
+    - name: Deploy application
+      ansible.builtin.command:
+        docker-compose up -d
