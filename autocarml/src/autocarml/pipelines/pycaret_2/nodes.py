@@ -32,6 +32,6 @@ def create_model_setup(data_frame: pandas.DataFrame, target: str) -> Tuple[Any, 
 
 def generate_model(data_frame: pandas.DataFrame, target: str) -> Any:
     setup(data=data_frame, target=target)
-    best_2 = create_model('dt')
+    best_2 = compare_models(sort='TT')
     print(best_2)
     return best_2
