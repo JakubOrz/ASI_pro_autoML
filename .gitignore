@@ -6,3 +6,4 @@
 /.vs/
 /autocarml/data/03_models/pycarret_model_1.pkl
 /autocar_API/ml_models/pycarret_model_1.pkl
+/autocar_API/ml_models/pycaret_best_model_2.pkl

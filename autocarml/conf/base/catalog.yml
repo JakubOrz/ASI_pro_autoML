@@ -1,7 +1,7 @@
 
 small_raw_car_data_path:
   type: pandas.CSVDataSet
-  filepath: data/01_raw/car_prices_small.csv
+  filepath: /data/01_raw/car_prices_small.csv
   load_args:
     sep: ','
     quotechar: '"'
@@ -10,7 +10,7 @@ small_raw_car_data_path:
     parse_dates: true
 large_raw_car_data_path:
   type: pandas.CSVDataSet
-  filepath: data/01_raw/car_prices.csv
+  filepath: /data/01_raw/car_prices.csv
   load_args:
     sep: ','
     quotechar: '"'
@@ -19,19 +19,19 @@ large_raw_car_data_path:
     parse_dates: true
 car_data_chunk:
   type: pandas.CSVDataSet
-  filepath: data/02_intermadiate/data_chunk.csv
+  filepath: /data/02_intermadiate/data_chunk.csv
 yearly_sales:
   type: json.JSONDataSet
-  filepath: data/02_intermadiate/year_sales.json
+  filepath: /data/02_intermadiate/year_sales.json
 cleared_dates:
   type: pandas.CSVDataSet
-  filepath: data/02_intermadiate/data_cleared_1.csv
+  filepath: /data/02_intermadiate/data_cleared_1.csv
 trained_model:
   type: pickle.PickleDataSet
-  filepath: data/03_models/kedro_best_model.pkl
+  filepath: /data/03_models/kedro_best_model.pkl
 trained_optunised_model:
   type: pickle.PickleDataSet
-  filepath: data/03_models/optuna_best_lr_model.pkl
+  filepath: /data/03_models/optuna_best_lr_model.pkl
 trained_model_2:
    type: pickle.PickleDataSet
-   filepath: data/03_models/pycaret_best_model_2.pkl
+   filepath: /data/03_models/pycaret_best_model_2.pkl

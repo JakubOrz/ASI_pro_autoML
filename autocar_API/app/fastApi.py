@@ -1,14 +1,16 @@
-import pickle
+import joblib
 import uvicorn
-import numpy as np
-from fastapi import FastAPI
-from sklearn.linear_model import Ridge
-
+import pandas as pd
+from fastapi import FastAPI, Depends
 from models import CarStats
 
 
+# Should load model from container volume
+def load_model():
+    yield joblib.load('/data/03_models/pycaret_best_model_2.pkl')
+
+
 app = FastAPI()
-ml_model: Ridge = pickle.load(open('../ml_models/pycarret_model_1.pkl', 'rb'))
 
 
 @app.get("/")
@@ -22,19 +24,17 @@ def model():
 
 
 @app.get("/model_inputs")
-def testModel():
-    return ml_model.n_features_in_
+def testModel(mlModel=Depends(load_model)):
+    return mlModel.n_features_in_
 
 
 @app.post("/predict")
-def predict(data: CarStats):
+def predict(data: CarStats, mlModel=Depends(load_model)):
     try:
-        np_data = np.array([x for x in data.dict().values()])
-        prediction = ml_model.predict(np_data)
-        return {
-            "Succes": True,
-            "Result": prediction
-        }
+        query_df = pd.DataFrame(data)
+        query = pd.get_dummies(query_df)
+        prediction = mlModel.predict(query)
+        return {'prediction': list(prediction)}
     except Exception as ex1:
         return {
             "Succes": False,

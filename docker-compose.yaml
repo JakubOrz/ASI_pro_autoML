@@ -9,11 +9,11 @@ services:
         - KEDRO_UID=999
         - KEDRO_GID=0
     ports:
-      - 8888:8888
+      - "8888:8888"
     environment:
       - PYTHONPATH=/home/kedro_docker
     volumes:
-      - data_volume:/home/kedro_docker
+      - data_volume:/data
     working_dir: /home/kedro_docker
     command: ["kedro", "run"]
   autocar_api:
@@ -23,9 +23,9 @@ services:
       args:
         - BASE_IMAGE=python:3.9-slim
     ports:
-      - 80:80
+      - "80:80"
     volumes:
-      - data_volume:/code
+      - data_volume:/data
     working_dir: /code
     command: ["uvicorn", "app.fastApi:app", "--host", "0.0.0.0", "--port", "80"]
 volumes:

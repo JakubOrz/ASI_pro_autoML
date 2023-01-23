@@ -11,6 +11,14 @@
 
 ## Change log
 
+### 23.01.2023 Wpięcie API do modelu
+Api odwołuje się do wskazanego za pomocą Depends do 
+modelu umieszczonego w wspólnym volume
+poprzez pipeline odpowiedzialny za trenowanie
+Api bierze ten model na ślepo, nie uwzględnia błędów w samym modelu
+
+Jakub Orzyłowski
+
 ### 22.01.2023 Add ansible playbook
   Playbook will run the following tasks:
  - Build the images
