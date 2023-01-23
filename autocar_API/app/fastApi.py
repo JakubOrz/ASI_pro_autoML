@@ -2,7 +2,7 @@ import joblib
 import uvicorn
 import pandas as pd
 from fastapi import FastAPI, Depends
-from models import CarStats
+from .models import CarStats
 
 
 # Should load model from container volume
