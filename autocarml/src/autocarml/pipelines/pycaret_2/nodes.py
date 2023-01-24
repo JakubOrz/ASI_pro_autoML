@@ -6,12 +6,12 @@ generated using Kedro 0.18.3
 from typing import Tuple, Any
 import pandas
 from pycaret.regression import setup
-from pycaret.regression import create_model
+from pycaret.regression import compare_models
 
 
 def preprocess_dates(data_frame: pandas.DataFrame) -> pandas.DataFrame:
     data_frame.drop(columns=["vin", "state", "seller", "saledate"], inplace=True)
-    data_frame = data_frame.drop(labels=range(100000, 558811), axis=0)
+    data_frame = data_frame.drop(labels=range(5000, 558811), axis=0)
     return data_frame
 
 

@@ -150,4 +150,3 @@ venv.bak/
 # mypy
 .mypy_cache/
 /data/03_models/optuna_best_lr_model.pkl
-/data/03_models/pycaret_best_model_2.pkl
