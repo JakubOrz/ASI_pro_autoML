@@ -10,6 +10,11 @@
 
 
 ## Change log
+### 24.01.2023 Update modelu ML (pycaret_best_model_2.pkl)
+Poprawiłem pipeline, wytrenowałem nowy model i wrzuciłem go normalnie do gita, bo dvc nie działa.
+
+Błażej Bartkiewicz
+
 
 ### 23.01.2023 Wpięcie API do modelu
 Api odwołuje się do wskazanego za pomocą Depends do 
