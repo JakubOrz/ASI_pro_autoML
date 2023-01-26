@@ -1,0 +1,11 @@
+uvicorn~=0.20.0
+fastapi~=0.89.1
+kedro~=0.18.4
+setuptools~=65.6.3
+pandas~=1.5.3
+pycaret~=2.2.3
+pydantic~=1.10.4
+joblib~=1.2.0
+numpy~=1.23.5
+sklearn~=0.0.post1
+scikit-learn~=0.23.2
