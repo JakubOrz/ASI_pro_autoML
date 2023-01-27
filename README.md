@@ -10,6 +10,16 @@
 
 
 ## Change log
+
+### 27.01.2023 Nowy dvc remote
+Utworzyłem nowy server ssh do dvc remote, od tego nazwa nazego remote to server2.
+Teraz w dvc pliki trzymane są folderami, a nie z osobna, zrobienie nowego modelu.pkl
+nie wymaga już ręcznego dvc.
+Aby zrobić pull lub push
+dvc push -r server2
+
+Jakub Orzyłowski
+
 ### 24.01.2023 Update modelu ML (pycaret_best_model_2.pkl)
 Poprawiłem pipeline, wytrenowałem nowy model i wrzuciłem go normalnie do gita, bo dvc nie działa.
 
