@@ -10,15 +10,9 @@ from .nodes import *
 def create_pipeline(**kwargs) -> Pipeline:
     return pipeline([
         node(
-            func=import_model,
-            inputs=[],
-            outputs='model',
-            name="Imported_model"
-        ),
-        node(
             func=predict,
-            inputs="model",
-            outputs='result',
+            inputs=["trained_model_2", "test_data_1"],
+            outputs="predict_result",
             name="Prediction"
         )
     ])

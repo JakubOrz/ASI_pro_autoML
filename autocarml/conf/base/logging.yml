@@ -9,7 +9,7 @@ formatters:
 handlers:
   console:
     class: logging.StreamHandler
-    level: INFO
+    level: ERROR
     formatter: simple
     stream: ext://sys.stdout
 
@@ -38,10 +38,10 @@ handlers:
 
 loggers:
   kedro:
-    level: INFO
+    level: ERROR
 
   autocarml:
-    level: INFO
+    level: ERROR
 
 root:
   handlers: [rich, info_file_handler, error_file_handler]
