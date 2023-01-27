@@ -18,8 +18,9 @@ def predict(model: pd.DataFrame) -> Any:
     #
     predict_data = [[2014, 'BMW', '3 Series', '328i SULEV', 'Sedan', 'automatic', 4.5, 1331.0, 'gray', 'black', 31900]]
     #
-    data_frame = pd.DataFrame(predict_data, columns=['year', 'make', 'model', 'trim', 'body', 'transmission', 'condition',
-       'odometer', 'color', 'interior', 'mmr'])
+    data_frame = pd.DataFrame(predict_data,
+                              columns=['year', 'make', 'model', 'trim', 'body', 'transmission', 'condition',
+                                       'odometer', 'color', 'interior', 'mmr'])
     result = predict_model(model, data=data_frame)
     print(result)
     return result

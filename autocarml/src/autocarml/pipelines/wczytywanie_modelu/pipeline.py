@@ -19,6 +19,6 @@ def create_pipeline(**kwargs) -> Pipeline:
             func=predict,
             inputs="model",
             outputs='result',
-            name= "Prediction"
+            name="Prediction"
         )
     ])
