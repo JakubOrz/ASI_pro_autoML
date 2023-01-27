@@ -1,4 +1,0 @@
-['remote "server2"']
-    url = ssh://azureuser@20.223.167.128:/home/automl/data2
-    user = azureuser
-    keyfile = ../dvcServer2_key.pem
