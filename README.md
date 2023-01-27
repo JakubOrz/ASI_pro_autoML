@@ -20,6 +20,12 @@ dvc push -r server2
 
 Jakub Orzyłowski
 
+### 26.01.2023 Pipeline do przyjmowania danych i ewaluacji
+
+Zrobiony i działający pipeline wczytujący model, dostający DataFrame i wypluwający wynik
+
+Błażej Bartkiewicz & Paweł Sołtys
+
 ### 24.01.2023 Update modelu ML (pycaret_best_model_2.pkl)
 Poprawiłem pipeline, wytrenowałem nowy model i wrzuciłem go normalnie do gita, bo dvc nie działa.
 
