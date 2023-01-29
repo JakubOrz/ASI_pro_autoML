@@ -3,11 +3,11 @@ from pydantic import BaseModel
 
 class CarStats(BaseModel):
     year: int
-    car_brand: str
-    car_model: str
+    make: str
+    model: str
     trim: str
-    body_type: str
-    transmission_type: str
+    body: str
+    transmission: str
     condition: float
     odometer: int
     color: str

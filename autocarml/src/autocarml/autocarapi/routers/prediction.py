@@ -16,21 +16,21 @@ router = APIRouter()
 
 @router.post("/")
 def predict(carData: CarStats, pipeline: Pipeline = Depends(load_predict_pipeline)) -> PredictionResult:
-    model = load_model("../data/03_models/pycaret_best_model_2")
     dataframe = pd.DataFrame([carData.dict()])
 
     catalog = DataCatalog(feed_dict={
-        "test_data_1": pd.DataFrame([carData.dict()]),
-        "trained_model_2": model
+        "test_data_1": dataframe,
+        "model_path": "../data/03_models/pycaret_model_3"
 
     })
     runner = SequentialRunner()
+
     success = True
     result = {}
     errors = ""
     try:
         result = runner.run(pipeline=pipeline, catalog=catalog)
-        print(result)
+        print(f"Rezultat pipeline {result}")
         success: bool = True
         errors: str = ""
     except Exception as ex1:

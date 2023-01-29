@@ -6,4 +6,4 @@ from pydantic import BaseModel
 class ModelPredict(BaseModel):
     isSuccess: bool
     errors: Optional[str]
-    result: Optional[Dict[str, Any]]
+    result: Optional[Dict[str, float]]
