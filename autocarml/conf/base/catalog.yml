@@ -38,3 +38,6 @@ trained_model_2:
 test_data_1:
   type: json.JSONDataSet
   filepath: data/04_test/api_requestq.json
+trained_model_3:
+    type: pickle.PickleDataSet
+    filepath: data/03_models/pycaret_model_3.pkl
