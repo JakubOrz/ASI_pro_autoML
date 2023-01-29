@@ -11,6 +11,15 @@
 
 ## Change log
 
+### 29.01.2023 Wpięcie API do pipeline
+
+Utworzyłem API które wpina się do pipeline i dokonuje predyckji na podstawie 
+przesłanych danych. Przeniosłem Dockerfile do katalogu dockerfiles, aby łatwiej było
+nad nimi zapanować
+
+Jakub Orzyłowski
+
+
 ### 27.01.2023 Nowy dvc remote
 Utworzyłem nowy server ssh do dvc remote, od tego nazwa nazego remote to server2.
 Teraz w dvc pliki trzymane są folderami, a nie z osobna, zrobienie nowego modelu.pkl

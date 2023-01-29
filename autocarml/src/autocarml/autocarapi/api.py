@@ -1,12 +1,17 @@
 import uvicorn
-from fastapi import FastAPI, Depends
-from typing import Dict, Iterable
-from kedro.pipeline import Pipeline
-from dependency import load_pipeline
-from router import router
+from fastapi import FastAPI
+from starlette.responses import RedirectResponse
+
+from autocarml.src.autocarml.autocarapi.routers import predictions
 
 app = FastAPI()
-app.include_router(router, prefix="/dataprocesing")
+app.include_router(predictions, prefix="/predictions")
+
+
+@app.get("/")
+def redirect_to_docs():
+    response = RedirectResponse(url='/docs')
+    return response
 
 
 if __name__ == '__main__':
