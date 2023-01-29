@@ -1,6 +1,3 @@
-import os
-import pickle
-
 import pandas as pd
 from typing import Any, Dict, Set
 from fastapi import APIRouter, Depends
@@ -9,13 +6,12 @@ from ..schemas import CarStats, PredictionResult
 from kedro.io import DataCatalog
 from kedro.pipeline import Pipeline
 from kedro.runner import SequentialRunner
-from pycaret.regression import load_model
 
 router = APIRouter()
 
 
 @router.post("/")
-def predict(carData: CarStats, pipeline: Pipeline = Depends(load_predict_pipeline)) -> PredictionResult:
+async def predict(carData: CarStats, pipeline: Pipeline = Depends(load_predict_pipeline)) -> PredictionResult:
     dataframe = pd.DataFrame([carData.dict()])
 
     catalog = DataCatalog(feed_dict={
@@ -23,7 +19,7 @@ def predict(carData: CarStats, pipeline: Pipeline = Depends(load_predict_pipelin
         "model_path": "../data/03_models/pycaret_model_3"
 
     })
-    runner = SequentialRunner()
+    runner = SequentialRunner(is_async=True)
 
     success = True
     result = {}

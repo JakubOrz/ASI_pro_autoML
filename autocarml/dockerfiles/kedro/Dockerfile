@@ -6,6 +6,9 @@ FROM $BASE_IMAGE as runtime-environment
 COPY autocarml/requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache -r /tmp/requirements.txt && rm -f /tmp/requirements.txt
 
+# copy data from dvc
+
+
 # add kedro user
 ARG KEDRO_UID=999
 ARG KEDRO_GID=0

@@ -1,20 +1,22 @@
-ARG BASE_IMAGE=python:3.9-slim
+ARG BASE_IMAGE=python:3.8-slim
 FROM $BASE_IMAGE as runtime-environment
 
 #
-WORKDIR /code
-
-#
-COPY ../../../requirements.txt /code/requirements.txt
+COPY src/autocarml/autocarapi/requirements.txt /code/requirements.txt
 
 #
 RUN pip install --upgrade -r /code/requirements.txt
 
 #
-COPY ../../../autocar_API/app /code/app
+COPY src/autocarml/autocarapi  /code/app
+
+COPY data/03_models /data/03_models
+
+#
+WORKDIR /code
 
 #
 EXPOSE 80
 EXPOSE 5000
 #
-CMD ["uvicorn", "app.fastApi:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "app.api:app", "--host", "0.0.0.0", "--port", "80"]
