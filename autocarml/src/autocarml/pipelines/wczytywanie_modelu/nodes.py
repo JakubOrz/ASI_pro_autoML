@@ -15,6 +15,6 @@ def predict(model, data: pd.DataFrame) -> Any:
     data_frame = pd.DataFrame(predict_data, columns=
     ['year', 'make', 'model', 'trim', 'body', 'transmission', 'condition', 'odometer', 'color', 'interior', 'mmr']
                               )
-    result = predict_model(model, data=data)
+    result = predict_model(model, data=data_frame)
     # print(result)
     return result

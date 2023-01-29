@@ -16,10 +16,8 @@ router = APIRouter()
 
 @router.post("/")
 def predict(carData: CarStats, pipeline: Pipeline = Depends(load_predict_pipeline)) -> PredictionResult:
-    #model = pickle.load(open("../data/03_models/pycaret_best_model_2.pkl", 'rb'))
     model = load_model("../data/03_models/pycaret_best_model_2")
     dataframe = pd.DataFrame([carData.dict()])
-    print(dataframe)
 
     catalog = DataCatalog(feed_dict={
         "test_data_1": pd.DataFrame([carData.dict()]),
