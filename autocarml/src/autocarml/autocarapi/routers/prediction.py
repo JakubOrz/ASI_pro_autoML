@@ -9,13 +9,15 @@ from ..schemas import CarStats, PredictionResult
 from kedro.io import DataCatalog
 from kedro.pipeline import Pipeline
 from kedro.runner import SequentialRunner
+from pycaret.regression import load_model
 
 router = APIRouter()
 
 
 @router.post("/")
 def predict(carData: CarStats, pipeline: Pipeline = Depends(load_predict_pipeline)) -> PredictionResult:
-    model = pickle.load(open("../data/03_models/pycaret_best_model_2.pkl", 'rb'))
+    #model = pickle.load(open("../data/03_models/pycaret_best_model_2.pkl", 'rb'))
+    model = load_model("../data/03_models/pycaret_best_model_2")
     dataframe = pd.DataFrame([carData.dict()])
     print(dataframe)
 
